@@ -161,6 +161,33 @@ section {
       height: 100vh;
     }
   }
+  #logo-codepen {
+    display: flex; /* Flexbox ile hizalama */
+    justify-content: center; /* Ortalar */
+    align-items: center; /* Dikey olarak ortalar */
+    margin: 20px; /* Alan bırakma */
+}
+
+#logo-codepen svg {
+    width: 50px; /* İstediğiniz genişlik */
+    height: 50px; /* İstediğiniz yükseklik */
+}
+
+/* Responsive tasarım için */
+@media (max-width: 768px) {
+    #logo-codepen svg {
+        width: 40px; /* Daha küçük ekranlar için boyut */
+        height: 40px; /* Daha küçük ekranlar için boyut */
+    }
+}
+
+@media (max-width: 480px) {
+    #logo-codepen svg {
+        width: 30px; /* Mobil cihazlar için daha küçük boyut */
+        height: 30px; /* Mobil cihazlar için daha küçük boyut */
+    }
+}
+
 section .section-content {
   display: block;
   position: absolute;
@@ -281,10 +308,10 @@ section#studio .card {
   padding: 1rem;
   border: 1px solid #222;
   box-sizing: border-box;
-  & h2 {
-    /*
+ & h2 {
+    
      text-decoration:underline;
-     */
+     
   }
 }
 
@@ -496,7 +523,7 @@ a {
   left: 0;
   height: 100vh;
   width: 100vw;
-  // visibility:hidden;
+   visibility:hidden;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAH0lEQVQYV2NkQAX/GZH4/xkYGBhhAmAOSBJEwDkgAQCCrgQEjpMcPgAAAABJRU5ErkJggg==)
     repeat;
 
