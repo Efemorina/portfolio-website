@@ -137,8 +137,8 @@ section {
   height: 100vh;
   background: var(--c0) 
             url(https://i.ibb.co/MP0GMyV/B57-F3-D44-3-ED8-49-AD-B755-E8-D5-EA7420-DE.jpg) 
-            no-repeat center -55rem fixed; 
-    no-repeat 50% 50% fixed;
+            no-repeat center -55rem fixed; /* 50 piksel aşağıda konumlandırma */
+            no-repeat 50% 50% fixed;
   background-size: cover;
   pointer-events: none;
   mix-blend-mode: difference;
