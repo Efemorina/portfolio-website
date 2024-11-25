@@ -144,7 +144,23 @@ section {
   mix-blend-mode: difference;
   transform: scalex(-1);
   filter: grayscale(1) contrast(1);
+  
 }
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #img-bkg {
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+  
+@media screen and (max-width: 767px) {
+    #img-bkg {
+      background-position: center center;
+      background-size: cover;
+      background-attachment: scroll; /* Mobile için fixed yerine scroll */
+      height: 100vh;
+    }
+  }
 section .section-content {
   display: block;
   position: absolute;
